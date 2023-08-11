@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="481.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.courseregister">
+    <children>
+      <ImageView fitHeight="625.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@colorful_fractal.png" />
+         </image>
+      </ImageView>
+        <Label layoutX="385.0" layoutY="193.0" prefHeight="26.0" prefWidth="99.0" text="Course Name" textFill="#fcffad">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Label>
+        <Label layoutX="385.0" layoutY="246.0" prefHeight="26.0" prefWidth="99.0" text="Course ID" textFill="#fcffad">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Label>
+        <Label layoutX="386.0" layoutY="296.0" text="Faculty Name" textFill="#fcffad">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Label>
+        <Label layoutX="134.0" layoutY="262.0" />
+        <TextField fx:id="courseid" layoutX="517.0" layoutY="247.0" prefHeight="26.0" prefWidth="168.0" promptText="Course ID" />
+        <TextField fx:id="facultyname" layoutX="517.0" layoutY="295.0" prefHeight="26.0" prefWidth="168.0" promptText="Course's Faculty Name" />
+        <ChoiceBox fx:id="mychoicebox" layoutX="516.0" layoutY="194.0" prefHeight="26.0" prefWidth="168.0" />
+        <Button id="sale" fx:id="enroll" layoutX="541.0" layoutY="403.0" mnemonicParsing="false" onAction="#enroll" prefHeight="42.0" prefWidth="117.0" stylesheets="@stylesheet.css" text="Enroll" />
+      <Button id="sale" fx:id="backo" layoutX="59.0" layoutY="544.0" mnemonicParsing="false" onAction="#backoOnAction" prefHeight="0.0" prefWidth="74.0" stylesheets="@stylesheet.css" text="Back" />
+      <Label layoutX="986.0" layoutY="587.0" text="Designed by MNM" />
+      <TextField fx:id="studid" layoutX="516.0" layoutY="346.0" prefHeight="26.0" prefWidth="168.0" />
+      <Text fill="#fcffad" layoutX="385.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+          <Label layoutX="344.0" layoutY="102.0" text="COURSE REGISTRATION" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="39.0" />
+              </font>
+          </Label>
+    </children>
+</AnchorPane>

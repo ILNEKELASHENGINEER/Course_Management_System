@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Teachstudcr">
+   <children>
+      <ImageView fitHeight="631.0" fitWidth="1100.0" pickOnBounds="true">
+         <image>
+            <Image url="@colorful_fractal.png" />
+         </image>
+      </ImageView>
+      <Button id="sale" fx:id="logout" layoutX="505.0" layoutY="391.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="50.0" prefWidth="184.0" stylesheets="@stylesheet.css" text="Log-out" />
+      <Button id="sale" fx:id="stucr" layoutX="505.0" layoutY="196.0" mnemonicParsing="false" onAction="#stucrOnAction" prefHeight="50.0" prefWidth="184.0" stylesheets="@stylesheet.css" text="Student Course Detail" />
+      <Button id="sale" fx:id="stupr" layoutX="505.0" layoutY="292.0" mnemonicParsing="false" onAction="#stuprOnAction" prefHeight="50.0" prefWidth="184.0" stylesheets="@stylesheet.css" text="Student Profiles" />
+      <ImageView fitHeight="67.0" fitWidth="64.0" layoutX="412.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="78.0" layoutX="412.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@online-course%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="53.0" layoutX="418.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@shutdown.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="337.0" layoutY="81.0" text="TEACHER DASHBOARD" textFill="#ff7d2b">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

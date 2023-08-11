@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="616.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Mainpage">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="1100.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@colorful_fractal.png" />
+         </image>
+      </ImageView>
+      <Button id="shiny" fx:id="teacherbtn" layoutX="615.0" layoutY="339.0" mnemonicParsing="false" onAction="#teacherbtnOnAction" prefHeight="42.0" prefWidth="109.0" stylesheets="@stylesheet.css" text="STUDENT" />
+      <Button id="shiny" fx:id="stubtn" layoutX="366.0" layoutY="339.0" mnemonicParsing="false" onAction="#stubtnOnAction" prefHeight="42.0" prefWidth="110.0" stylesheets="@stylesheet.css" text="TEACHER" />
+      <Label layoutX="209.0" layoutY="145.0" text="MNM COURSE MANAGEMENT SYSTEM" textFill="#13c6c9" wrapText="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="499.0" layoutY="269.0" text="ARE YOU?" textFill="#c9b7b7">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="86.5" radius="31.055" spread="0.45" width="39.72" />
+         </effect>
+      </Label>
+      <Button id="red" fx:id="close" layoutX="987.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeOnAction" prefHeight="27.0" prefWidth="86.0" stylesheets="@stylesheet.css" text="CLOSE" />
+      <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="396.0" layoutY="283.0" pickOnBounds="true">
+         <image>
+            <Image url="@classroom.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="644.0" layoutY="283.0" pickOnBounds="true">
+         <image>
+            <Image url="@student-with-graduation-cap.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="time" layoutX="79.0" layoutY="35.0" prefHeight="27.0" prefWidth="120.0">
+         <textFill>
+            <LinearGradient endX="0.5909091288393193" endY="0.09090911800211127" startX="0.353219696969697" startY="0.6022727408192374">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8631578683853149" green="0.13107211887836456" blue="0.8265535831451416" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="41.0" layoutX="32.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-delivery-time-96.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

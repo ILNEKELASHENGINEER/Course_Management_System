@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1100.0" style="-fx-background-color: #FECBD4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Registeration">
+    <children>
+      <ImageView fitHeight="631.0" fitWidth="1100.0" pickOnBounds="true">
+         <image>
+            <Image url="@colorful_fractal.png" />
+         </image>
+      </ImageView>
+        <TableView fx:id="coursetable" layoutX="152.0" layoutY="137.0" prefHeight="420.0" prefWidth="734.0">
+            <columns>
+                <TableColumn fx:id="coursename" prefWidth="239.19998168945312" text="                      Course name" />
+                <TableColumn fx:id="courseid" prefWidth="246.4000244140625" text="                             Course ID" />
+                <TableColumn fx:id="facultyname" prefWidth="247.20001220703125" text="                  Faculty Name" />
+            </columns>
+        </TableView>
+      <Label layoutX="152.0" layoutY="557.0" prefHeight="30.0" prefWidth="288.0" text="*Courses are Framed by our KEC-Faculty " textFill="WHITE" />
+      <Label layoutX="987.0" layoutY="595.0" text="Desingned by MNM">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button id="sale" fx:id="bckbtn" layoutX="787.0" layoutY="568.0" mnemonicParsing="false" onAction="#bckbtnOnAction" prefHeight="38.0" prefWidth="98.0" stylesheets="@stylesheet.css" text="Back" />
+      <Label layoutX="370.0" layoutY="25.0" text="COURSES ENROLLED">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.32954548434777686" startX="0.4015151795112726" startY="0.7462121320493293">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.42222222685813904" blue="0.42222222685813904" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="studentid" layoutX="152.0" layoutY="100.0" prefHeight="30.0" prefWidth="174.0" promptText="      Enter Your Student ID" />
+      <Button id="green" fx:id="go" layoutX="333.0" layoutY="100.0" mnemonicParsing="false" onAction="#goOnAction" prefHeight="30.0" prefWidth="74.0" stylesheets="@stylesheet.css" text="GO" />
+    </children>
+</AnchorPane>

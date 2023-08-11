@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <ImageView fitHeight="625.0" fitWidth="1100.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@colorful_fractal.png" />
+         </image>
+      </ImageView>
+      <Text fill="#bacf44" fontSmoothingType="LCD" layoutX="409.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student LOGIN" wrappingWidth="282.39995117187505">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="32.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <Text layoutX="547.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New user?">
+         <fill>
+            <RadialGradient centerX="0.20484582338039042" centerY="0.5113636074644147" radius="0.7201834512413094">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.18912281095981598" green="0.6758888959884644" blue="0.8105263113975525" opacity="0.75" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill></Text>
+      <Button id="sale" fx:id="signup" layoutX="520.0" layoutY="514.0" mnemonicParsing="false" onAction="#signupOnAction" prefHeight="42.0" prefWidth="116.0" stylesheets="@stylesheet.css" text="Sign-up">
+         <font>
+            <Font size="8.0" />
+         </font></Button>
+      <Label fx:id="loginmessagelabel2" layoutX="464.0" layoutY="446.0" prefHeight="32.0" prefWidth="251.0">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="977.0" layoutY="592.0" text="Designed by MNM">
+         <effect>
+            <Bloom />
+         </effect></Label>
+      <TextField fx:id="studentid" blendMode="SCREEN" layoutX="463.0" layoutY="256.0" prefHeight="32.0" prefWidth="227.0" promptText="Student ID" />
+      <PasswordField fx:id="stupass" blendMode="SCREEN" layoutX="464.0" layoutY="332.0" prefHeight="32.0" prefWidth="227.0" promptText="Password" />
+      <Button id="rnd" fx:id="login" layoutX="593.0" layoutY="397.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="32.0" prefWidth="72.0" stylesheets="@stylesheet.css" text="Log-in">
+         <font>
+            <Font name="DejaVu Sans" size="11.0" />
+         </font>
+      </Button>
+      <Button id="redline" fx:id="cancel" layoutX="489.0" layoutY="397.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="32.0" prefWidth="72.0" stylesheets="@stylesheet.css" text="Back" />
+      <Text layoutX="354.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student-ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5600000023841858" green="1.0" blue="0.5727682113647461" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="359.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5600000023841858" green="1.0" blue="0.5727682113647461" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Label fx:id="invalid" layoutX="497.0" layoutY="446.0" prefHeight="32.0" prefWidth="206.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.6499999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
